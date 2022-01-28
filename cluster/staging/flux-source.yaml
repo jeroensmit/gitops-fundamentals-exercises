@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: flux-fundamentals
+  namespace: jsmit
+spec:
+  gitImplementation: go-git
+  interval: 10m0s
+  ref:
+    branch: main
+  timeout: 20s
+  url: https://github.com/guidalabs/gitops-fundamentals-exercises.git
+
