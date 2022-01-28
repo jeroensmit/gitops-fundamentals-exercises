@@ -25,10 +25,10 @@ kubectl create serviceaccount flux-reconciler --dry-run=client -o yaml -n <NAMES
 ```
 kubectl create rolebinding flux-reconciler-admin-binding \
 --clusterrole=admin \
---serviceaccount=<NAMESPACE>:flux-reconciler \
+--serviceaccount=jsmit:flux-reconciler \
 --dry-run=client \
 -o yaml \
--n <NAMESPACE> \
+-n jsmit \
 > cluster/staging/flux-rbac.yaml
 ```
 ```

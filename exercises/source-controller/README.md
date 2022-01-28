@@ -9,9 +9,9 @@ export FLUX_SYSTEM_NAMESPACE=<NAMESPACE>
 2. Create a Flux Gitrepository source with SSH by using the following command.
 ```
 flux create source git flux-fundamentals \
-    --url=https://<REPO_URL> \
-    --username=<PERSONAL_ACCESS_TOKEN_NAME> \
-    --password=<PERSONAL_ACCESS_TOKEN> \
+    --url=https://github.com/jeroensmit/gitops-fundamentals-exercises \
+    --username=jeroensmit \
+    --password=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 \
     --branch=main \
     --interval=10m
 ```
